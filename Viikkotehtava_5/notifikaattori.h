@@ -1,0 +1,21 @@
+#ifndef NOTIFIKAATTORI_H
+#define NOTIFIKAATTORI_H
+
+#include "Seuraaja.h"
+#include <string>
+using namespace std;
+
+class Notifikaattori {
+private:
+    Seuraaja *seuraajat;
+
+public:
+    Notifikaattori();
+
+    void lisaa(Seuraaja *s);
+    void poista(string nimi);
+    void tulosta();
+    void postita(string viesti);
+};
+
+#endif
